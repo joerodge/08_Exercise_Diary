@@ -73,3 +73,4 @@ def test_reading_past_end_starts_reading_at_start_again():
 def test_returns_empty_string_if_mins_or_wpm_is_zero():
     entry = DiaryEntry('Day1', 'Went for a short walk today, it was really nice')
     assert entry.reading_chunk(0, 0) == ''
+
